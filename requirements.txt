@@ -1,0 +1,11 @@
+PyPDF2
+python-docx
+python-pptx
+easyocr
+transformers
+torch 
+librosa
+pydub
+sentencepiece
+streamlit
+moviepy
