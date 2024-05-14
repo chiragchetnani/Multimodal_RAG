@@ -32,4 +32,4 @@ def image_text(path):
     if len(result) > 0:
         return result
     else:
-        return bliq(path)
+        return blip(path)

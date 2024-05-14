@@ -1,5 +1,5 @@
 import PyPDF2
-import docx 
+from docx import Document
 import os 
 from pptx import Presentation
 import torch
@@ -22,9 +22,9 @@ def pdf(path) :
     return text
 
 #extracting from docx
-def docx(path) : 
+def docx_(path) : 
 
-    doc = docx.Document(path)
+    doc = Document(path)
     text = ''
 
     for paragraph in doc.paragraphs : text += paragraph.text
@@ -33,18 +33,18 @@ def docx(path) :
 
 import docx
 
-#extracting from doc
-def doc(path) : 
+# #extracting from doc
+# def doc(path) : 
 
-    doc = docx.Doument(path)
-    new_path = f'{path}x'
-    doc.save(new_path)
+#     doc = Document(path)
+#     new_path = f'{path}x'
+#     doc.save(new_path)
 
-    text = extract_text_from_docx(new_path)
+#     text = extract_text_from_docx(new_path)
 
-    os.remove(new_path)
+#     os.remove(new_path)
 
-    return text
+#     return text
 
 #extracting from pptx
 def pptx(path) : 

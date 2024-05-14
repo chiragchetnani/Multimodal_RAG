@@ -1,14 +1,7 @@
 import pydub
-import PyPDF2
-import docx
-import os 
-from pptx import Presentation
-import easyocr
 import librosa
 import torch
-
-from PIL import Image
-from transformers import BlipProcessor, BlipForConditionalGeneration , Speech2TextProcessor , Speech2TextForConditionalGeneration
+from transformers import  Speech2TextProcessor , Speech2TextForConditionalGeneration
 
 model = Speech2TextForConditionalGeneration.from_pretrained('facebook/s2t-small-librispeech-asr')
 processor = Speech2TextProcessor.from_pretrained('facebook/s2t-small-librispeech-asr')

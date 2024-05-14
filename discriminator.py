@@ -13,7 +13,10 @@ def categorize_files(directory_path):
         'csv': [],
         'html': [],
         'css': [],
-        'xml': []
+        'xml': [],
+        'jpg': [],
+        'jpeg': [],
+        'png': []
     }
 
     # Iterate through each file in the directory

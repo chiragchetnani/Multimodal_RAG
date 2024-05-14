@@ -9,3 +9,11 @@ pydub
 sentencepiece
 streamlit
 moviepy
+langchain
+langchain_community
+langchain_core
+langchain_cohere
+cohere
+sentence-transformers
+faiss-cpu
+faiss-gpu
